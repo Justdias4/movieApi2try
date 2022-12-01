@@ -15,7 +15,7 @@ public class Main {
         String url = "https://imdb8.p.rapidapi.com/auto-complete?q=" + title;
         HttpRequest request = (HttpRequest) HttpRequest.newBuilder()
                 .uri(URI.create(url))
-                .header("X-RapidAPI-Key", "74dc76cf0dmsh5086c65d2f8de38p1f18fdjsn53810525ff06")
+                .header("X-RapidAPI-Key", "SECRET_KEY")
                 .header("X-RapidAPI-Host", "imdb8.p.rapidapi.com")
                 .method("GET", HttpRequest.BodyPublishers.noBody())
                 .build();
